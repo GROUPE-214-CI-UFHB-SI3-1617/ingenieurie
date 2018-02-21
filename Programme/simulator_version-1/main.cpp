@@ -243,7 +243,7 @@ int main()
                                                                                             cout<<"/******* Affichage de la liste de voisins  *******\\n\n";
                                                                                             graph.nodes[nomDuNoeud]->affichVoiz();
                                                                                             //Gérer boucle sur sous menu
-                                                                                               //Pour revenir au sous menu
+                                                                                            //Pour revenir au sous menu
                                                                                             cout<<"\n\n\n";
                                                                                            do
                                                                                            {
@@ -262,6 +262,12 @@ int main()
                                                                                         case 2:
                                                                                         {
                                                                                             cout<<"/******* Affichage de la table de routage du noeud saisit  *******\\n\n";
+                                                                                                bool EtatDeConvergence=false;
+                                                                                                // tempsInitial=time(0);
+                                                                                                for( int i(0);i<nbrNoeud;i++)
+                                                                                                {
+                                                                                                        EtatDeConvergence=graph.nodes[i]->dijkstra(graph.getLinkTable(),nbrNoeud);
+                                                                                                }
                                                                                             graph.nodes[nomDuNoeud]->affichATable();
                                                                                               //Gérer boucle sur sous menu
                                                                                             cout<<"\n\n\n";
