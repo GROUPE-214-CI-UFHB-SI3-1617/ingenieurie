@@ -146,7 +146,7 @@ int main()
                                                                     }
 
                                                                     //Pour revenir au sous menu
-                                                                        /*   do
+                                                                          do
                                                                            {
                                                                                   cout<<"\n\nVoulez vous revenir au sous menu ?\nO: pour oui    N: pour non\n    "  ;
                                                                                   cin>>RevenirSousMenu;
@@ -156,7 +156,7 @@ int main()
                                                                                     attent();
                                                                                     getch();
                                                                                     system("cls");
-                                                                             }*/
+                                                                             }
 
                                                                     break;
                                                                 }
@@ -171,7 +171,7 @@ int main()
                                                                     }
 
                                                                  //Pour revenir au sous menu
-                                                                         /*  do
+                                                                           do
                                                                            {
                                                                                   cout<<"\n\nVoulez vous revenir au sous menu  ?\n   O: pour oui      N: pour non\n    "  ;
                                                                                   cin>>RevenirSousMenu;
@@ -181,7 +181,7 @@ int main()
                                                                                       attent();
                                                                                     getch();
                                                                                         system("cls");
-                                                                             }*/
+                                                                             }
 
                                                                     break;
                                                                 }
@@ -191,21 +191,9 @@ int main()
 
                                                                 }
                                                         }
-                                                          //Pour revenir au sous menu
-                                                                           do
-                                                                           {
-                                                                                  cout<<"Voulez vous revenir au sous menu  ?\n   O: pour oui      N: pour non\n    "  ;
-                                                                                  cin>>RevenirSousMenu;
-                                                                           }while(toupper(RevenirSousMenu) !='O'  && toupper(RevenirSousMenu)  !='N');
-                                                                             if(toupper(RevenirSousMenu)=='O')
-                                                                             {
-                                                                                     attent();
-                                                                                        getch();
-                                                                                        system("cls");
-                                                                             }
 
-                                                        }while(RevenirSousMenu == 'O');
 
+                                                        }while(toupper(RevenirSousMenu)=='O');
                                                     break;
                                                 }
 
